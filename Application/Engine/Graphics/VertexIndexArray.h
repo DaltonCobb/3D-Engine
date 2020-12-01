@@ -5,7 +5,6 @@ namespace nc
 {
 	class VertexIndexArray : public VertexArray
 	{
-		GLuint m_ibo = 0;
 	public:
 		bool Create(const std::string& name, void* null = nullptr) override;
 		void Destroy() override;
@@ -14,6 +13,8 @@ namespace nc
 	protected:
 		GLuint m_ibo = 0;
 		GLuint m_indexCount = 0;
-		GLenum m_indexType = 0; 
+		GLenum m_indexType = 0;
 	};
 }
+
+
