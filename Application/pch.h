@@ -4,6 +4,8 @@
 #include "Engine/Core/Assert.h"
 #include "Engine/Math/Math.h"
 
+//#include "Engine/Engine.h"
+
 #include "sdl.h"
 #include <SDL_image.h>
 #include <glad/glad.h>

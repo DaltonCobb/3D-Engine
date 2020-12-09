@@ -20,7 +20,7 @@ namespace nc
 
 	void VertexArray::CreateBuffer(GLsizei size, GLsizei count, void* data)
 	{
-		count = m_count;
+		m_count = count;
 
 		GLuint vbo = 0;
 		glGenBuffers(1, &vbo);
@@ -41,7 +41,7 @@ namespace nc
 		// bind vertex array m_vao with glBindVertexArray
 		glBindVertexArray(m_vao);
 		// call glDrawArrays with the parameters (primitive type, 0, m_count)
-		glDrawArrays(m_vao, 0, m_count);
+		glDrawArrays(primitiveType, 0, m_count);
 	}
 }
 

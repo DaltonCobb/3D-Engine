@@ -1,6 +1,6 @@
 #pragma once
-#include "pch.h"
 #include "Engine/Resources/resource.h"
+#include <map>
 
 
 namespace nc
